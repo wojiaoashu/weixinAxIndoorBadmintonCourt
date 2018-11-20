@@ -1,0 +1,20 @@
+/* pages/mine/mine.wxss */
+.erweima{
+  display: block;
+  width: 340rpx;
+  height: 340rpx;
+  margin: 150rpx auto 50rpx auto;
+}
+text{
+  display: block;
+  text-align: center;
+  font-size: 25rpx;
+}
+.tip{
+  color: rgb(143, 120, 120);
+}
+.tip2{
+  display: none;
+  color: #93d16f;
+  margin-top: -130rpx;
+}

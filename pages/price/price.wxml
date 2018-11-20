@@ -1,0 +1,2 @@
+<!--pages/price/price.wxml-->
+<image src="{{priceImg}}" class="price-img" width="750" height="340"/>

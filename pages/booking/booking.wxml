@@ -1,0 +1,72 @@
+<!--pages/booking/booking.wxml-->
+<view class='booking-table-wrap south'>
+    <view class="table">
+      <view class="tr">
+          <view class="th th1">南边场</view>
+          <view class="th th2"><text>1\n号场</text></view>
+          <view class="th th2"><text>3\n号场</text></view>
+          <view class="th th2"><text>5\n号场</text></view>
+          <view class="th th2"><text>7\n号场</text></view>
+          <view class="th th2"><text>9\n号场</text></view>
+          <view class="th th2"><text>11\n号场</text></view>
+      </view>
+      <view class='table-body-wrap'>
+        <view class="tr" wx:for="{{nums}}" >
+            <view class="td td1">{{nowHour+index}}:00</view>
+            <view class="td td2" bindtap='toBook'>空</view>
+            <view class="td td2" bindtap='toBook'>空</view>
+            <block wx:if="{{nowHour+index==17||nowHour+index==18}}">
+              <view class="td td2" bindtap='toBook' style="background-color:{{tdBgColor}};color:{{tdColor}}">君城</view>
+            </block>
+            <block wx:else> 
+              <view class="td td2" bindtap='toBook'>空</view>
+            </block>
+            <block wx:if="{{nowHour+index==17}}">
+              <view class="td td2" bindtap='toBook' style="background-color:{{tdBgColor}};color:{{tdColor}}">君城</view>
+            </block>
+            <block wx:else> 
+              <view class="td td2" bindtap='toBook'>空</view>
+            </block>            
+            <!-- <view class="td td2" bindtap='toBook'>{{(index==9||index==10)?'君城':'空'}}</view> -->
+            <!-- <view class="td td2" bindtap='toBook'>{{index==9?'君城':'空'}}</view> -->
+            <view class="td td2" bindtap='toBook'>空</view>
+            <view class="td td2" bindtap='toBook'>空</view>                    
+        </view>
+      </view>
+    </view>
+ </view>
+
+ <view class='booking-table-wrap north'>
+    <view class="table">
+      <view class="tr">
+        <view class="th th1">北边场</view>
+        <view class="th th2"><text>2\n号场</text></view>
+        <view class="th th2"><text>4\n号场</text></view>
+        <view class="th th2"><text>6\n号场</text></view>
+        <view class="th th2"><text>8\n号场</text></view>
+        <view class="th th2"><text>10\n号场</text></view>
+        <view class="th th2"><text>12\n号场</text></view>
+      </view>
+      <view class='table-body-wrap'>
+        <view class="tr" wx:for="{{nums}}">
+          <view class="td td1">{{nowHour+index}}:00</view>
+          <view class="td td2" bindtap='toBook'>空</view> 
+          <block wx:if="{{nowHour+index==20||nowHour+index==21||nowHour+index==22}}">
+            <view class="td td2" bindtap='toBook' style="background-color:{{tdBgColor}};color:{{tdColor}}">老余</view>
+            <view class="td td2" bindtap='toBook' style="background-color:{{tdBgColor}};color:{{tdColor}}">老余</view>
+            <view class="td td2" bindtap='toBook' style="background-color:{{tdBgColor}};color:{{tdColor}}">老余</view>
+          </block>
+          <block wx:else> 
+            <view class="td td2" bindtap='toBook'>空</view>
+            <view class="td td2" bindtap='toBook'>空</view>
+            <view class="td td2" bindtap='toBook'>空</view>            
+          </block>                      
+          <!-- <view class="td td2" bindtap='toBook'>{{(index==12||index==13||index==14)?'老余':'空'}}</view>
+          <view class="td td2" bindtap='toBook'>{{(index==12||index==13||index==14)?'老余':'空'}}</view>
+          <view class="td td2" bindtap='toBook'>{{(index==12||index==13||index==14)?'老余':'空'}}</view> -->
+          <view class="td td2" bindtap='toBook'>空</view>
+          <view class="td td2" bindtap='toBook'>空</view>                    
+        </view>
+      </view>
+    </view>
+ </view>

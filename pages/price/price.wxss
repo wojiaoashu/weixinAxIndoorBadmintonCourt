@@ -1,0 +1,5 @@
+/* pages/price/price.wxss */
+.price-img{
+  width: 750rpx;
+  height: 340rpx;
+}

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='information'>
+  <view class='info-item' bindtap='toTel'>
+    <image class='info-icon' src='{{iconTel}}'></image>
+    <text class='info tel'>{{textTel}}</text>
+  </view>
+  <view class='info-item' bindtap='toMap'>
+    <image class='info-icon' src='{{iconIndress}}'></image>
+    <text class='info indress'>{{textIndress}}</text>
+  </view>  
+</view>
+
+<view class='booking'>
+  <navigator url="../../pages/booking/booking" open-type="switchTab"><button type="primary" class='btn primary-button' size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="toBookToday" hover-class="other-button-hover">订场 今天</button></navigator>
+  <button type="default" class='btn other-button' size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover">订场 明天</button>      
+</view>
+
+

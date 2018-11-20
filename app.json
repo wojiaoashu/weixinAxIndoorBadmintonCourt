@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/booking/booking",
+    "pages/price/price",
+    "pages/mine/mine",
+    "pages/map/map"
+  ],
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#16b9e9",
+    "navigationBarTitleText": "奥星羽毛球馆",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "color":"#707070",
+        "selectedColor":"#16b9e9",
+        "iconPath":"image/tabBar_sy.png",
+        "selectedIconPath":"image/tabBar_sy2.png"
+      },
+      {
+        "pagePath": "pages/price/price",
+        "text": "价目表",
+        "color": "#707070",
+        "selectedColor": "#16b9e9",
+        "iconPath": "image/tabBar_jmb.png",
+        "selectedIconPath": "image/tabBar_jmb2.png"        
+      },
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "订场",
+        "color": "#707070",
+        "selectedColor": "#16b9e9",
+        "iconPath": "image/tabBar_yd.png",
+        "selectedIconPath": "image/tabBar_yd2.png"        
+      },   
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "color": "#707070",
+        "selectedColor": "#16b9e9",
+        "iconPath": "image/tabBar_wd.png",
+        "selectedIconPath": "image/tabBar_wd2.png"        
+      }      
+    ]
+  }
+}

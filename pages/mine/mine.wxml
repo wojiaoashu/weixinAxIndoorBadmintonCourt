@@ -1,0 +1,7 @@
+<!--pages/mine/mine.wxml-->
+<image src="{{erweima}}" class="erweima" width="340" height="340"/>
+<text>寻找存在感？扫一扫加我微信，拉你进“奥星羽球球友群”。</text>
+<text class='tip'>\n添加时请备注“羽毛球”。</text>
+<!-- <canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas"></canvas> -->
+<canvas style="width: 750px; height: 200px;" canvas-id="firstCanvas"></canvas>
+<text class='tip2' style='display:{{displayStle}}'>\n等你进群我们再玩吧！</text>
